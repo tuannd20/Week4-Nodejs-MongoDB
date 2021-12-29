@@ -1,0 +1,68 @@
+POST https://localhost:3000/api/tours/createTours
+Content-Type: application/json
+
+{
+    "title": "Du lich",
+    "price": "1.520.000",
+    "image": "http://placeimg.com/640/480",
+    "location": "Da Lat",
+    "time": "20/04/2022"
+}
+########
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json 
+
+{
+    "username": "admin123",
+    "password": "1234"
+}
+
+
+########
+@baseUrl = http://localhost:3030/api/
+
+#Tours 
+
+# @name getAllTours
+
+GET {{baseUrl}}tours
+
+#####
+
+# @name createNewTour
+
+POST {{baseUrl}}tours
+Content-Type:application/json
+
+{
+    "id": 20,
+    "location": "Da Lat",
+    "activity": "Chup Anh",
+    "date": "20/04/2022",
+    "image": "https://stockdep.net/files/images/65601899.jpg",
+    "price": "1.520.000"
+}
+
+#####
+
+# @name updateTour
+
+PATCH {{baseUrl}}tours/1
+Content-Type:application/json
+
+{
+    "location": "Da Lat New",
+    "activity": "Chup Anh",
+    "date": "20/04/2022",
+    "image": "https://stockdep.net/files/images/65601899.jpg",
+    "price": "1.520.000"
+}
+
+
+#####
+
+# @name removeTour
+
+DELETE {{baseUrl}}tours/20
+
+

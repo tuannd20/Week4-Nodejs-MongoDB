@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <!-- sass ./sass/app.scss ./css/app.css --watch -->
+    <div class="wrapper">
+      <!-- Start header -->
+      <% include header %>
+      <!-- End header -->
+
+      <!-- Start main -->
+      <main>
+        <!-- Start section hero  -->
+        <section class="hero">
+          <div class="containers">
+            <div class="hero-main">
+              <div class="hero-content">
+                <h1 class="heading hero-heading">Explore and Travel</h1>
+                <div class="hero-caption">Holiday finder</div>
+                <div class="hero-form">
+                  <div class="dropdown">
+                    <div class="dropdown-select">
+                      <span class="dropdown-value">Location</span>
+                      <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="dropdown-list">
+                      <div class="dropdown-item">title</div>
+                      <div class="dropdown-item">title</div>
+                      <div class="dropdown-item">title</div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="dropdown-select">
+                      <span class="dropdown-value">Activity</span>
+                      <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="dropdown-list">
+                      <div class="dropdown-item">title</div>
+                      <div class="dropdown-item">title</div>
+                      <div class="dropdown-item">title</div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="dropdown-select">
+                      <span class="dropdown-value">Grade</span>
+                      <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="dropdown-list">
+                      <div class="dropdown-item">title</div>
+                      <div class="dropdown-item">title</div>
+                      <div class="dropdown-item">title</div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="dropdown-select">
+                      <span class="dropdown-value">Date</span>
+                      <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="dropdown-list">
+                      <div class="dropdown-item">title</div>
+                      <div class="dropdown-item">title</div>
+                      <div class="dropdown-item">title</div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#!" class="button button--primary">Explore</a>
+              </div>
+              <div class="hero-image">
+                <img
+                  srcset="<%= process.env.BASE_URL %>./images/img1.png 2.2x"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
+        </section>
+        <!-- End section hero  -->
+
+        <!-- Start section Explore -->
+        <section class="explore">
+          <div class="containers">
+            <div class="explore-main">
+              <div class="explore-image">
+                <img
+                  srcset="<%= process.env.BASE_URL %>./images/img2.png 2x"
+                  alt=""
+                />
+              </div>
+              <div class="explore-content">
+                <h2 class="heading heading--small explore-heading">
+                  A new way to explore the world
+                </h2>
+                <p class="text explore-desc" style="text-align: justify">
+                  For decades travellers have reached for Lonely Planet books
+                  when looking to plan and execute their perfect trip, but now,
+                  they can also let Lonely Planet Experiences lead the way. For
+                  decades travellers have reached for Lonely Planet books when
+                  looking to plan and execute their perfect trip, but now, they
+                  can also let Lonely Planet Experiences lead the way
+                </p>
+                <a href="#!" class="button button--primary">Learn more</a>
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
+        </section>
+        <!-- End section Explore  -->
+
+        <!-- Start section Feature -->
+        <section class="destination">
+          <div class="containers">
+            <div class="destination-header">
+              <h2 class="heading heading--small">Feature destination</h2>
+              <a href="#" class="destination-more">
+                <span>View all</span>
+                <i class="fa fa-angle-right"></i>
+              </a>
+            </div>
+            <div class="destination-list">
+              <div class="destination-item">
+                <div class="destination-image">
+                  <img
+                    srcset="<%= process.env.BASE_URL %>./images/feature01.jpg 2x"
+                    alt=""
+                  />
+                </div>
+                <div class="destination-content">
+                  <h3 class="destination-name">Greenwich</h3>
+                  <span class="destination-country">England</span>
+                </div>
+              </div>
+              <div class="destination-item">
+                <div class="destination-image">
+                  <img
+                    srcset="<%= process.env.BASE_URL %>./images/nhanhHeader01.jpg 3x"
+                    alt=""
+                  />
+                </div>
+                <div class="destination-content">
+                  <h3 class="destination-name">Greenwich</h3>
+                  <span class="destination-country">England</span>
+                </div>
+              </div>
+              <div class="destination-item">
+                <div class="destination-image">
+                  <img
+                    srcset="<%= process.env.BASE_URL %>./images/feature03.jpg 4x"
+                    alt=""
+                  />
+                </div>
+                <div class="destination-content">
+                  <h3 class="destination-name">Greenwich</h3>
+                  <span class="destination-country">England</span>
+                </div>
+              </div>
+              <div class="destination-item">
+                <div class="destination-image">
+                  <img
+                    srcset="<%= process.env.BASE_URL %>./images/feature04.jpg 2x"
+                    alt=""
+                  />
+                </div>
+                <div class="destination-content">
+                  <h3 class="destination-name">Greenwich</h3>
+                  <span class="destination-country">England</span>
+                </div>
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
+        </section>
+        <!-- End section Feature -->
+
+        <!-- Start section Guide -->
+        <section class="guide">
+          <div class="containers">
+            <div class="guide-main">
+              <div class="giude-content">
+                <h2 class="heading heading--small guide-heading">
+                  Guides by Thousand Sunny
+                </h2>
+                <p class="text guide-desc">
+                  Packed with tips and advice from our on-the-ground experts,
+                  our city guides app (iOS and Android) is the ultimate resource
+                  before and during a trip. Packed with tips and advice from our
+                  on-the-ground experts,our city guides app (iOS and Android) is
+                  the ultimate resource before and during a trip.
+                </p>
+                <a href="#!" class="button button--primary">Download</a>
+              </div>
+              <div class="guide-image">
+                <img
+                  srcset="<%= process.env.BASE_URL %>./images/img3.png 2x"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
+        </section>
+        <!-- End section Guide -->
+
+        <!-- Start section Testimonial -->
+        <section class="testimonial">
+          <div class="containers">
+            <h2 class="heading heading--small">Testimonials</h2>
+            <div class="testimonial-container">
+              <div class="testimonial-content">
+                <div class="testimonial-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="text testimonial-desc">
+                  “Quisque in lacus a urna fermentum euismod. Integer mi nibh,
+                  dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit
+                  sit amet turpis nec”
+                </div>
+                <div class="testimonial-author">
+                  <h3 class="testimonial-name">Truong Quang Nhanh</h3>
+                  <span class="testimonial-job"
+                    >CEO of An Thịnh Sơn Company</span
+                  >
+                </div>
+              </div>
+              <div class="testimonial-image">
+                <img
+                  srcset="<%= process.env.BASE_URL %>./images/test02.png 2x"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
+        </section>
+        <!-- End section Testimonial -->
+
+        <!-- Start section Story -->
+        <section class="story">
+          <div class="containers">
+            <div class="story-header">
+              <h2 class="heading heading--small">Trending stories</h2>
+              <a href="#!" class="story-more">
+                <span>View all</span>
+                <i class="fa fa-angle-right"></i>
+              </a>
+            </div>
+            <div class="story-list">
+              <div class="story-item">
+                <div class="story-image">
+                  <img
+                    srcset="<%= process.env.BASE_URL %>./images/story1.png 2x"
+                  />
+                </div>
+                <div class="story-content">
+                  <h3 class="story-title">
+                    The many benefits of taking a healing holiday
+                  </h3>
+                  <p class="story-desc">
+                    ‘Helaing holidays’ are on the rise tohelp maximise your
+                    health and happines...
+                  </p>
+                  <a href="#!" class="story-more">Read more</a>
+                </div>
+              </div>
+              <div class="story-item">
+                <div class="story-image">
+                  <img
+                    srcset="<%= process.env.BASE_URL %>./images/story2.png 2x"
+                  />
+                </div>
+                <div class="story-content">
+                  <h3 class="story-title">
+                    The many benefits of taking a healing holiday
+                  </h3>
+                  <p class="story-desc">
+                    ‘Helaing holidays’ are on the rise tohelp maximise your
+                    health and happines...
+                  </p>
+                  <a href="#!" class="story-more">Read more</a>
+                </div>
+              </div>
+              <div class="story-item">
+                <div class="story-image">
+                  <img
+                    srcset="<%= process.env.BASE_URL %>./images/story3.png 2x"
+                  />
+                </div>
+                <div class="story-content">
+                  <h3 class="story-title">
+                    The many benefits of taking a healing holiday
+                  </h3>
+                  <p class="story-desc">
+                    ‘Helaing holidays’ are on the rise tohelp maximise your
+                    health and happines...
+                  </p>
+                  <a href="#!" class="story-more">Read more</a>
+                </div>
+              </div>
+              <div class="story-item">
+                <div class="story-image">
+                  <img
+                    srcset="<%= process.env.BASE_URL %>./images/story4.png 2x"
+                  />
+                </div>
+                <div class="story-content">
+                  <h3 class="story-title">
+                    The many benefits of taking a healing holiday
+                  </h3>
+                  <p class="story-desc">
+                    ‘Helaing holidays’ are on the rise tohelp maximise your
+                    health and happines...
+                  </p>
+                  <a href="#!" class="story-more">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
+        </section>
+        <!-- End section Story -->
+      </main>
+      <!-- End main -->
+
+      <!-- Start footer -->
+      <% include footer %>
+      <!-- End footer -->
+    </div>
+    <script src="<%= process.env.BASE_URL %>./js/app.js"></script>
+  </body>
+</html>

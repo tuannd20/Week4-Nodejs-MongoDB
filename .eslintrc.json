@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "plugins": ["import"],
+  "extends": ["airbnb-base", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 13
+  },
+  "rules": {
+    "linebreak-style": ["error", "unix"],
+    "allowNamedFunctions": false,
+    "allowUnboundThis": true,
+    "eqeqeq": "off",
+    "semi": ["error", "always"],
+    "curly": "error",
+    "quotes": ["error", "double"],
+    "comma-style": ["error", "last"],
+    "object-shorthand": ["error", "always"],
+    "import/no-named-as-default": "off",
+    "import/namespace": "warn",
+    "import/prefer-default-export": "off",
+    "import/no-named-as-default-member": 0,
+    "import/no-cycle": "warn"
+  }
+}
